@@ -1,35 +1,82 @@
 #navigation {
-	background-color:red;
-	width:900px;
-	height:30px;
+	width:auto;
+	height:50px;
+	text-align:right;
+	padding-right:15px;
 }
 
 #main {
-	background-color:blue;
-	height:500px;
 	width:600px;
-	margin: 200px auto 50px auto;
+	margin: 130px auto 0 auto;
+	text-align:center;
+	padding-bottom:40px;
 }
 
 #footer {
-	background-color:green;
-	bottom:-30px;
+	background-color:#ECEDE8;
+	height:40px;
+	border-top: 1px solid #C9C9C9;
+	width:100%;
+	position:absolute;
+	bottom:0;
 }
 
+#nav_ {
+	display:table;
+	float:right;
+}
 
-li {display:inline;}
+ul {
+	list-style-type:none;
+	margin:0;
+	font-family:Arial;
+	font-size:12px;
+	height:auto;
+	padding: 8px 0;
+	display:table-row;
+}
+
+li {
+	display:table-cell;
+	vertical-align: middle;
+	padding: 8px;
+}
+
+a {
+	text-decoration:none;
+	color:#696969;
+	text-align:center;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+#footer a {
+	padding: 0 15px 5px 15px;
+}
 
 li img {
 	height:auto;
 	width:30px;
 }
-ul {
-	list-style:none;
-	margin:0;
-	padding:0;
-	font-family:Arial;
-	font-size:14px;
+
+.nav a {
+	color:#292928;
 }
+
+.left {float:left;}
+.right {float:right;}
+
+input[type=submit] {
+	background-color:#ECEDE8;
+	border:1px solid #C9C9C9;
+	padding:6px 10px;
+	border-radius:2px;
+	font-size:11px;
+	font-weight: bold;
+}
+
 
 /***********************************************************
  * Specific section
@@ -39,17 +86,32 @@ ul {
  */
 
 #share {
+	display:table;
 	background-color:#E3E3E3;
-	padding:5px	10px;
+	margin:5px 0;
+	height:20px;
+	width:30px;
+	vertical-align: center;
 }
-#share:hover {
+#share:hover, #share a:hover {
 	background-color: #C9C9C9;
+	text-decoration:none;
 }
 
 #search_bar {
-	border:1px solid black;
+	border:1px solid #ECEDE8;
+	margin:20px;
 }
 
-#person {
-	border-radius:15px;
+#search_bar:hover {border:1px solid #696969;}
+#search_bar:focus {	border:1px solid blue;}
+
+#person {border-radius:15px;}
+
+input[type=text] {
+	width:520px;
+	float:left;
+	border:none;
 }
+
+input[type=text]:focus {outline:0;}
